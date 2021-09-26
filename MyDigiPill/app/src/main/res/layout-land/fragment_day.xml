@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.ugent.mydigipill.fragments.DayFragment">
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnGap="1dp"
+        app:defaultEventColor="@color/colorPrimaryDark"
+        app:eventTextColor="@color/colorPrimary"
+        app:firstDayOfWeek="monday"
+        app:headerRowPadding="12dp"
+        app:horizontalScrollingEnabled="false"
+        app:numberOfVisibleDays="1"
+        app:showFirstDayOfWeekFirst="true" />
+
+    <LinearLayout
+        android:id="@+id/weekView_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/smiley"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/oops_emoji"
+            android:src="@mipmap/ic_oops_emoji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_you_haven_t_any_alarms_planned"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

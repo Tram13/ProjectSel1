@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">MyDigiPill</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_login">Sign in</string>
+
+    <string name="default_username">Anonymous</string>
+    <string name="failed_authentication">Authentication failed</string>
+
+    <string name="welcome">"Welcome"</string>
+
+    <string name="invalid_email">Not a valid email</string>
+    <string name="no_email">Email is required</string>
+    <string name="invalid_password">Password must be at least 6 characters</string>
+    <string name="no_password">Password is required</string>
+    <string name="email_pw_enabled">Email of password enabled!</string>
+    <string name="user_pw_enabled">User of email enabled!</string>
+
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="description_search">Search button</string>
+    <string name="main_fragment_label">Main Fragment</string>
+    <string name="add_fragment_label">Add Fragment</string>
+    <string name="alarm_fragment_label">Alarm Fragment</string>
+    <string name="statistics_fragment_label">Statistics Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+    <string name="profile_fragment_label">Profile Fragment</string>
+    <string name="day_fragment_label">Day Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="Reminder_name">Name</string>
+    <string name="Reminder_intake">Ingestion</string>
+    <string name="Reminder_description">Description</string>
+    <string name="Reminder_add_new_alarms">Add new alarms</string>
+    <string name="Reminder_fragment_title_add">Add Reminder</string>
+    <string name="Reminder_fragment_title_edit">Edit Medication</string>
+
+    <string name="Reminder_add_alarms_button">Add alarm</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="username">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="continue_button">Continue</string>
+    <string name="forgot_password_button">Forgot password?</string>
+    <string name="verification_mail">Verification email sent to </string>
+    <string name="failed_verification_mail">Failed to send verification email.</string>
+    <string name="failed_set_username">Failed to set your username.</string>
+    <string name="reset_mail_sent">Reset email has been sent.</string>
+    <string name="reset_mail_fail">Something went wrong trying to send the email, please try again.</string>
+    <string name="long_lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed lacinia enim, a venenatis nisl. Morbi malesuada bibendum diam, eget aliquam leo imperdiet eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc laoreet tincidunt orci, quis viverra orci molestie vel. Maecenas vel ultricies augue, ac sollicitudin orci. Morbi hendrerit, massa at pharetra convallis, orci ex molestie tortor, eget mollis quam odio vel enim. Nunc quis felis sagittis, iaculis ex in, sodales enim. Cras sit amet turpis a mi gravida maximus sed sed tellus. Sed vel quam nisi. Duis maximus nunc et nisi pellentesque viverra.</string>
+    <string name="short_lorem_ipsum" translatable="false">Lorem ipsum</string>
+
+    <string name="description_isnull">No description.</string>
+
+    <!-- Strings used for Notification handling -->
+    <string name="notification_channelname">Reminders</string>
+    <string name="notification_channeldescription">Notifications for reminders</string>
+    <string name="notification_title">Take your medication</string>
+    <string name="please_take_medication">Please take medication: %1$s</string>
+
+    <string name="alarm_title_fragment">Add alarm</string>
+    <string name="select_days">Select days</string>
+    <string name="monday_short">M</string>
+    <string name="tuesday_short">T</string>
+    <string name="wednesday_short">W</string>
+    <string name="thursday_short">T</string>
+    <string name="friday_short">F</string>
+    <string name="saturday_short">S</string>
+    <string name="sunday_short">S</string>
+    <string name="Reminder_save">SAVE</string>
+
+    <string name="save_medication_no_name">Please enter a name</string>
+    <string name="save_medication_no_alarm">Please create at least one alarm</string>
+    <string name="save_medication_unknown_status_code">An unknown error has occurred while saving the data.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="overview">Overview</string>
+    <string name="statistics">Statistics</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="picture_of_the_medication">Picture of the medication</string>
+    <string name="profile_name">Profile name</string>
+    <string name="placeholder_email">placeholder@email.com</string>
+    <string name="next_ingestion_message">Next:\n%1$dd, %2$dh and %3$dm</string>
+    <string name="edit_fragment_label">Edit Fragment</string>
+    <string name="confirmation_dialog_delete_title">Delete medication</string>
+    <string name="confirmation_dialog_delete_content">Are you sure you want to delete this medication?
+It will be permanently deleted from the database.</string>
+    <string name="confirmation_dialog_delete_cancel">Cancel</string>
+    <string name="confirmation_dialog_delete_continue">Delete</string>
+    <string name="detail_sheet_tag">Detail view of a medication</string>
+    <string name="search_infoleaflet_question">What is the brandname of your medication?</string>
+    <string name="confirm_pw">Please confirm your password.</string>
+
+
+    <!-- settings -->
+    <string name="snooze">Snooze</string>
+    <string name="snooze_time">Snooze time</string>
+    <string name="one_minute">1 minute</string>
+    <string name="one_hour">1 hour</string>
+    <string name="one_day">1 day</string>
+    <string name="display">Display</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="info_leaflet">Info leaflet</string>
+
+
+    <string name="delete_account_succes">Delete account successful</string>
+    <string name="delete_account_failed">Delete account failed</string>
+    <string name="sign_out_succes">Signed out successfully</string>
+    <string name="sign_out_failed">Sign out failed</string>
+    <string name="name_change_succes">Name successfully changed</string>
+    <string name="name_change_failed">Name change failed</string>
+    <string name="password_change_succes">Password successfully changed</string>
+    <string name="password_change_failed">Password change failed</string>
+    <string name="email_change_failed">Email change failed</string>
+    <string name="email_change_success">Email successfully changed</string>
+    <string name="confirmation_dialog_sign_out_title">Sign out?</string>
+    <string name="confirmation_dialog_sign_out_content">Are you sure you want to sign out?</string>
+    <string name="confirmation_dialog_delete_account_title">Delete account?</string>
+    <string name="confirmation_dialog_delete_account_content">Are you sure you want to delete your account? All your data will be deleted and lost forever.</string>
+    <string name="username_error">Username can not be empty</string>
+    <string name="No_alarms_enabled">No alarms set</string>
+    <string name="shared_preference_file" translatable="false">settings preferences</string>
+    <string name="password_wrong">Wrong password, please try again.</string>
+    <string name="profile_picture_change_succes">Profile picture saved successfully</string>
+    <string name="profile_picture_change_failed">Profile picture change failed</string>
+    <string name="Reminder_add_image_button">ADD IMAGE</string>
+    <string name="edit_image_text">Edit image</string>
+    <string name="medication_add_succes">Medication successfully added</string>
+    <string name="medication_update_succes">Medication successfully updated</string>
+    <string name="medication_add_fail">Failed to add medication</string>
+    <string name="medication_update_fail">Failed to update medication</string>
+    <string name="image_medication_success">Image uploaded successfully</string>
+    <string name="image_medication_failed">Failed to upload image</string>
+    <string name="delete_account_buttontext">Delete account</string>
+    <string name="sign_out_buttontext">Sign Out</string>
+    <string name="gallery_buttontext">Gallery</string>
+    <string name="take_photo_buttontext">Take photo</string>
+    <string name="edit_email_contentdescription">Edit email</string>
+    <string name="edit_password_contentdescription">Edit password</string>
+    <string name="edit_username_contentdescription">Edit username</string>
+    <string name="no_perm_camera">No permission to use the camera</string>
+    <string name="delete_button_alarm">DELETE</string>
+    <string name="today_you_haven_t_any_alarms_planned">There aren\'t any alarms planned today.</string>
+    <string name="oops_emoji" translatable="false">oops_emoji</string>
+    <string name="disclaimer_button">Disclaimer</string>
+    <string name="description_button">Description</string>
+    <string name="route_button">Route</string>
+    <string name="brand_button">Brand</string>
+    <string name="warnings_button">Warnings</string>
+    <string name="warnings_small_button">Warnings-Small</string>
+    <string name="pediatric_use_button">Pediatric use</string>
+    <string name="dosage_button">Dosage</string>
+    <string name="reactions_button">Reactions</string>
+    <string name="pregnancy_buttons">Pregnancy</string>
+    <string name="overdosage_button">Overdosage</string>
+    <string name="show_prescription_button_text">Show prescription</string>
+    <string name="notifictions">Notifications</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="sound">Sound</string>
+    <string name="take_medication">Take medication</string>
+</resources>

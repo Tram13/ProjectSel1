@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-158dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:maxWidth="160dp"
+                android:maxHeight="160dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_profile_icon" />
+
+            <EditText
+                android:id="@+id/profile_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:fontFamily="@font/open_sans_light"
+                android:scrollbars="horizontal"
+                android:text="Username"
+                app:layout_constraintEnd_toStartOf="@+id/save_username"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <ImageButton
+                android:id="@+id/EditUsernameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="68dp"
+                android:contentDescription="@string/edit_username_contentdescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image"
+                app:srcCompat="@drawable/icon_edit_dark" />
+
+            <Button
+                android:id="@+id/TakePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/take_photo_buttontext"
+                app:layout_constraintBottom_toTopOf="@+id/OpenGalleryButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.342"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/OpenGalleryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/gallery_buttontext"
+                app:layout_constraintBottom_toTopOf="@+id/EditUsernameButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.342"
+                app:layout_constraintStart_toEndOf="@+id/profile_image" />
+
+            <EditText
+                android:id="@+id/profile_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:fontFamily="@font/open_sans_light"
+                android:scrollbars="horizontal"
+                android:text="Password"
+                app:layout_constraintEnd_toStartOf="@+id/save_password"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+            <ImageButton
+                android:id="@+id/EditPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="68dp"
+                android:contentDescription="@string/edit_password_contentdescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_username"
+                app:srcCompat="@drawable/icon_edit_dark" />
+
+
+            <EditText
+                android:id="@+id/profile_emailAdress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:fontFamily="@font/open_sans_light"
+                android:scrollbars="horizontal"
+                android:text="email-address"
+                app:layout_constraintEnd_toStartOf="@+id/save_email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_password" />
+
+            <ImageButton
+                android:id="@+id/EditEmailAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="68dp"
+                android:contentDescription="@string/edit_email_contentdescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_password"
+                app:srcCompat="@drawable/icon_edit_dark" />
+
+            <Button
+                android:id="@+id/SignOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/sign_out_buttontext"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditEmailAdress"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/DeleteAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/buttons_small_purple"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/delete_account_buttontext"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_emailAdress"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/cancel_username"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/buttons_small_purple"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <Button
+                android:id="@+id/save_username"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/Reminder_save"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@id/cancel_username"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image"
+                app:layout_constraintVertical_bias="0.755" />
+
+            <Button
+                android:id="@+id/cancel_password"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/buttons_small_purple"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditUsernameButton" />
+
+            <Button
+                android:id="@+id/save_password"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/Reminder_save"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@id/cancel_password"
+                app:layout_constraintTop_toBottomOf="@+id/EditUsernameButton"
+                app:layout_constraintVertical_bias="0.755" />
+
+            <Button
+                android:id="@+id/cancel_email"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/buttons_small_purple"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditPasswordButton" />
+
+            <Button
+                android:id="@+id/save_email"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/buttons_small_green"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/Reminder_save"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/cancel_email"
+                app:layout_constraintTop_toBottomOf="@+id/EditPasswordButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pop_up">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/disclaimerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:background="@drawable/buttons_large_green"
+            android:gravity="center"
+            android:text="@string/disclaimer_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/DescriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/description_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/BrandButton"
+            app:layout_constraintEnd_toStartOf="@+id/RouteButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/RouteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/route_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/WarningsButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/BrandButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BrandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/brand_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/WarningsSmallButton"
+            app:layout_constraintEnd_toStartOf="@+id/WarningsButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/WarningsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/warnings_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/PediatricUseButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/WarningsSmallButton" />
+
+        <Button
+            android:id="@+id/WarningsSmallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/warnings_small_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/DosageButton"
+            app:layout_constraintEnd_toStartOf="@+id/PediatricUseButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/PediatricUseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/pediatric_use_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ReactionsButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/DosageButton" />
+
+        <Button
+            android:id="@+id/DosageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/dosage_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/PregnancyButton"
+            app:layout_constraintEnd_toStartOf="@+id/ReactionsButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/ReactionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/reactions_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/Overdosage_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/PregnancyButton" />
+
+        <Button
+            android:id="@+id/PregnancyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/pregnancy_buttons"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/disclaimerButton"
+            app:layout_constraintEnd_toStartOf="@+id/Overdosage_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Overdosage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:background="@drawable/buttons_small_green"
+            android:gravity="center"
+            android:text="@string/overdosage_button"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/disclaimerButton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

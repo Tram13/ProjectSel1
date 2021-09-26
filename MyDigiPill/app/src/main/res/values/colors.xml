@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#3ACCE1</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#665EFF</color>
+
+    <color name="colorPrimaryBackground">#D5D7DB</color>
+    <color name="popupBackground">#2A2E43</color>
+
+
+    <!-- OUR extra colors colors -->
+    <color name="colorAccent2">#3497FD</color>
+    <color name="colorAccent3">#5773FF</color>
+
+    <color name="colorMain2">#78849E</color>
+    <color name="colorMain3">#454F63</color>
+
+</resources><!-- used colors:
+    #FFFFFF wit
+    #78849E licht grijs
+    #454F63 grijs
+    #2A2E43 donker grijs
+    #3ACCE1 licht blauw
+    #3497FD blauw
+    #5773FF donker blauw
+    #665EFF donker/paarsachtig blauw
+
+    #D5D7DB
+-->

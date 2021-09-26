@@ -1,0 +1,2 @@
+rootProject.name='MyDigiPill'
+include ':app'

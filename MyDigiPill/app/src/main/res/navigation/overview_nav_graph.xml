@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/overview_nav_graph"
+    app:startDestination="@id/overviewFragment">
+    <fragment
+        android:id="@+id/AddFragment"
+        android:tag="AddFragment"
+        android:name="be.ugent.mydigipill.fragments.AddFragment"
+        android:label="@string/add_fragment_label"
+        tools:layout="@layout/fragment_add">
+
+        <action
+            android:id="@+id/action_AddFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_down"
+            app:popUpTo="@id/overviewFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_AddFragment_to_textFieldToSearch"
+            app:destination="@id/textFieldToSearch" />
+    </fragment>
+    <dialog
+        android:id="@+id/textFieldToSearch"
+        android:name="be.ugent.mydigipill.confirmationAlerts.SearchPopup"
+        android:label="type string to search in api."
+        tools:layout="@layout/confirm_password_popup">
+        <!-- todo animaties -->
+        <action
+            android:id="@+id/action_textFieldToSearch_to_AddFragment"
+            app:destination="@id/AddFragment" />
+        <action
+            android:id="@+id/action_textFieldToSearch_to_EditFragment"
+            app:destination="@id/EditFragment" />
+    </dialog>
+    <dialog android:id="@+id/took_pill_dialog"
+        android:name="be.ugent.mydigipill.fragments.TookPillFragment"
+        android:label="register if user took a medication"
+        tools:layout="@layout/fragment_took_pill">
+
+        <action
+            android:id="@+id/action_took_pill_dialog_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+        <argument
+            android:name="medId"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/confirmDelete"
+        android:name="be.ugent.mydigipill.confirmationAlerts.ConfirmationTextDeleteMedication"
+        android:label="Confirmation Delete"
+        tools:layout="@layout/confirmation_text_fragment">
+        <!-- todo animaties -->
+        <action
+            android:id="@+id/action_confirm_delete_to_overviewFragment"
+            app:destination="@id/overviewFragment" />
+        <action
+            android:id="@+id/action_confirmDelete_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+        <argument
+            android:name="medId"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/bottomSheetDialog"
+        android:name="be.ugent.mydigipill.confirmationAlerts.MedicationBottomSheetDialog"
+        android:label="Bottomsheet Dialog"
+        tools:layout="@layout/medication_detail_view_sheet">
+        <!-- todo animaties -->
+
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_confirmDelete"
+            app:destination="@id/confirmDelete" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_prescriptionButtons"
+            app:destination="@id/prescriptionButtons" />
+        <argument
+            android:name="medId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_EditFragment"
+            app:destination="@id/EditFragment" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_took_pill_dialog"
+            app:destination="@id/took_pill_dialog" />
+    </dialog>
+    <dialog
+        android:id="@+id/prescriptionButtons"
+        android:name="be.ugent.mydigipill.confirmationAlerts.ButtonsPopup"
+        android:label="Popup with all the prescription buttons"
+        tools:layout="@layout/buttons_popup">
+        <!-- todo animaties -->
+
+        <action
+            android:id="@+id/action_prescriptionButtons_to_prescriptionText"
+            app:destination="@id/prescriptionText" />
+        <argument
+            android:name="medId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_prescriptionButtons_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+    </dialog>
+    <dialog
+        android:id="@+id/prescriptionText"
+        android:name="be.ugent.mydigipill.confirmationAlerts.TextPopup"
+        android:label="Prescription text Dialog"
+        tools:layout="@layout/text_popup">
+        <!-- todo animaties -->
+        <argument
+            android:name="prescriptionString"
+            app:argType="string" />
+        <argument
+            android:name="medId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_prescriptionText_to_prescriptionButtons"
+            app:destination="@id/prescriptionButtons" />
+    </dialog>
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:tag="OverviewFragment"
+        android:name="be.ugent.mydigipill.fragments.OverviewFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_overview">
+        <action
+            android:id="@+id/action_overviewFragment_to_AddFragment"
+            app:destination="@id/AddFragment"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/slide_out_up"
+            app:popEnterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_overviewFragment_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/EditFragment"
+        android:tag="EditFragment"
+        android:name="be.ugent.mydigipill.fragments.EditFragment"
+        android:label="@string/edit_fragment_label"
+        tools:layout="@layout/fragment_add">
+        <argument
+            android:name="medicationId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_EditFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_down"
+            app:popUpTo="@id/overviewFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_EditFragment_to_textFieldToSearch"
+            app:destination="@id/textFieldToSearch" />
+    </fragment>
+
+
+</navigation>

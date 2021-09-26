@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "770681109424",
+    "firebase_url": "https://mydigipill.firebaseio.com",
+    "project_id": "mydigipill",
+    "storage_bucket": "mydigipill.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770681109424:android:384fbbe0995e361f443475",
+        "android_client_info": {
+          "package_name": "com.example.mydigipill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770681109424-iprvdb92pblpmn942ss86kcom5pall6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mydigipill",
+            "certificate_hash": "45c1a28c6c527508c93df1cd40a39572e0fad63e"
+          }
+        },
+        {
+          "client_id": "770681109424-r4irpf66mg9i967egrq5td46gs802m8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYPjY3E-mXnrRyIlYvttqdQgWi0qkdBhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770681109424-r4irpf66mg9i967egrq5td46gs802m8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

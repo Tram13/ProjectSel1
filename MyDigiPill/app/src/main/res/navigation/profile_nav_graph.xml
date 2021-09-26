@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/ProfileFragment">
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="be.ugent.mydigipill.fragments.ProfileFragment"
+        android:label="@string/profile_fragment_label"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_confirmDelete"
+            app:destination="@id/confirmDelete" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_confirmPassword"
+            app:destination="@id/confirmPassword" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_confirmSignOut"
+            app:destination="@id/confirmSignOut" />
+    </fragment>
+    <dialog
+        android:id="@+id/confirmDelete"
+        android:name="be.ugent.mydigipill.confirmationAlerts.ConfirmationTextDeleteUser"
+        android:label="Delete account Popup"
+        tools:layout="@layout/confirmation_text_fragment">
+        <action
+            android:id="@+id/action_confirmDelete_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_confirmDelete_to_confirmPassword"
+            app:destination="@id/confirmPassword" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/confirmSignOut"
+        android:name="be.ugent.mydigipill.confirmationAlerts.ConfirmationTextSignOut"
+        android:label="Sign out Popup"
+        tools:layout="@layout/confirmation_text_fragment">
+        <action
+            android:id="@+id/action_confirmSignOut_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/confirmPassword"
+        android:name="be.ugent.mydigipill.confirmationAlerts.ConfirmPasswordPopup"
+        android:label="Delete account Popup"
+        tools:layout="@layout/confirm_password_popup">
+        <action
+            android:id="@+id/action_confirmPassword_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    android:scrollbars="vertical"
+    tools:context="be.ugent.mydigipill.fragments.AddFragment">
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="medication"
+        android:background="@drawable/textfield_placeholder"
+        android:fontFamily="@font/open_sans_light"
+        android:hint="@string/Reminder_name"
+        android:inputType="textAutoComplete"
+        android:paddingStart="@dimen/padding_start_text"
+        android:paddingEnd="@dimen/padding_start_text"
+        android:paddingBottom="4dp"
+        android:scrollbars="horizontal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_reminder" />
+
+    <Button
+        android:id="@+id/OpenGalleryButtonMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/gallery_buttontext"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/alarmRecycler"
+        app:layout_constraintTop_toBottomOf="@+id/TakePhotoButtonMed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/TakePhotoButtonMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/take_photo_buttontext"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/alarmRecycler"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder" />
+
+    <EditText
+        android:id="@+id/editText_description"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Ingest"
+        android:background="@drawable/textfield_placeholder"
+        android:fontFamily="@font/open_sans_light"
+        android:hint="@string/Reminder_description"
+        android:importantForAutofill="no"
+        android:inputType="textAutoComplete"
+        android:paddingStart="@dimen/padding_start_text"
+        android:paddingEnd="@dimen/padding_start_text"
+        android:paddingBottom="4dp"
+        android:scrollbars="horizontal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_ingestion"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/Reminder_description"
+        android:background="@drawable/textfield_placeholder"
+        android:fontFamily="@font/open_sans_light"
+        android:hint="@string/Reminder_intake"
+        android:inputType="textAutoComplete"
+        android:paddingStart="@dimen/padding_start_text"
+        android:paddingEnd="@dimen/padding_start_text"
+        android:paddingBottom="4dp"
+        android:scrollbars="horizontal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_description" />
+
+
+    <TextView
+        android:id="@+id/textView_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/Reminder_add_new_alarms"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/Reminder_fragment_title_add"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarmRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/placeholder"
+        app:layout_constraintTop_toBottomOf="@+id/textView_alarm"
+        tools:listitem="@layout/alarm_cardview_fragment" />
+
+    <Button
+        android:id="@+id/leafletButton"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="search prescription"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/alarmRecycler"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ingestion" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/Reminder_add_alarms_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_alarm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/Reminder_save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alarmRecycler"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/OpenGalleryButtonMed"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <ImageView
+        android:id="@+id/placeholder"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_notification_dark"
+        app:layout_constraintStart_toEndOf="@+id/editText_description"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttons_small_green"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OpenGalleryButtonMed"
+        app:layout_constraintVertical_bias="0.693" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
